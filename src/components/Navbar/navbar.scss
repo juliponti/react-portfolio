@@ -1,0 +1,26 @@
+@import "../../scss/configurations";
+
+.navbar__section-container {
+  max-width: 1024px;
+  height: 43px;
+  margin: 0 auto;
+
+  @include FlexBox(row, space-between);
+
+  .navbar__logo-img {
+    align-self: center;
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .navbar__menu {
+    font-size: 16px;
+    text-align: center;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      @include FlexBox;
+    }
+  }
+}

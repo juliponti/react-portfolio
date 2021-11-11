@@ -1,0 +1,53 @@
+// COLORS
+
+$body-bg-color: #f9f9ff;
+$nav-bg-color: #252236;
+$nav-border-color: #fbe7d417;
+$banner-bg-color: #1b1a31;
+$mywork-bg-color: #6c6ce5;
+$footer-bg-color: #f9f9ff;
+
+$font-color: #f5f5f5;
+$box-shadow-color: #948e94;
+$nav-menu-hover-color: #a288b1;
+$section-sub-color: #695169;
+
+$vl-color: #ff4c60;
+$white: #ffffff;
+//cards
+
+$card1-bg-color: #4f4682;
+$card1-bxsw-color: #221657;
+$card1-font-color: #695169;
+
+$card2-bg-color: #fce76e;
+$card2-bxsw-color: #dab305;
+
+$card3-bg-color: #ff4c60;
+$card3-bxsw-color: #b43140;
+
+$skillbar-html-color: #4f4682;
+$skillbar-css-color: #f5d485;
+$skillbar-js-color: #ff4c60;
+
+@mixin Card {
+  bg-color: $card1-bg-color, $card2-bg-color, $card2-bg-color;
+  box-shadow: 0px 5px 20px 0px $card1-bxsw-color, $card2-bxsh-color,
+    $card3-bxsh-color;
+  font-color: $font-color;
+}
+
+@mixin Skillbar {
+  background-color: $skillbar-html-color, $skillbar-css-color,
+    $skillbar-js-color;
+  width: 60%;
+  height: 8px;
+  border-radius: 16px;
+}
+
+@mixin FlexBox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
