@@ -1,10 +1,12 @@
 import "./aboutme.scss";
 import Avatar from "../../assets/sections/pale-129.png";
+import CV from "../../assets/CV-PONTINO-JULIETA-ES.pdf";
 
 function AboutMe() {
   return (
     <section id="about-me" className="section section-about-me">
       <h3 className="section-about-me__subtitle">Sobre mi</h3>
+      <hr />
       <div className="section-about-me__container">
         <div className="section-about-me__avatar-container">
           <img
@@ -14,14 +16,18 @@ function AboutMe() {
           />
         </div>
         <div className="section-about-me__right-container">
-          <div className="card section-about-me__card">
+          <div className=" section-about-me__card">
             <div className="section-about-me__card-info">
               <p>
                 Hola! Soy una desarrolladora frontend en progreso. Comencé a
                 adentrarme en el mundo It en Mayo de 2021 y me encantó. Estoy en
                 busca de mi primera oportunidad laboral y no puedo esperar a
                 tenerla! Realicé todos los cursos certificados de frontend en
-                <a href="https://courseit.io/" target="_blank">
+                <a
+                  href="https://courseit.io/"
+                  target="_blank"
+                  className="p-first-link"
+                >
                   {" "}
                   Course[It]
                 </a>{" "}
@@ -29,14 +35,19 @@ function AboutMe() {
                 Youtube, FreeCodeCamp y el abanico de posibilidades y
                 herramientas que afortunadamente nos brinda internet hoy en día.
                 También complemento para poner en práctica lo aprendido haciendo
-                challenges en
-                <a href="https://www.frontendmentor.io/" target="_blank">
-                  {" "}
-                  FrontendMentor .
+                challenges en {""}
+                <a
+                  href="https://www.frontendmentor.io/"
+                  target="_blank"
+                  className="p-second-link"
+                >
+                  {""} FrontendMentor .
                 </a>
               </p>
             </div>
-            <button className="button-primary">Descargar CV</button>
+            <form method="get" action={CV} target="_blank">
+              <button className="button-primary">Descargar CV</button>
+            </form>
           </div>
           <div className=" card section-about-me__card-switches ">
             <span>HTML5</span>

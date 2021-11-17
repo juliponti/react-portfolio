@@ -58,6 +58,14 @@ $box-shadow-card-color: #c7b8aa;
   position: absolute;
 }
 
+@mixin Links {
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
 @mixin button {
   @include FlexBox;
   width: max-content;

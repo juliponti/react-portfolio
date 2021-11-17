@@ -10,13 +10,15 @@
 
     &__subtitle {
       font-size: 1.563rem;
-      font-weight: bold;
+      font-weight: 600;
       text-align: left;
+      letter-spacing: 1px;
     }
 
     &__right-container {
       @include FlexBox(column, space-around);
       height: 510px;
+      margin: 0 13px;
     }
 
     &__container {
@@ -24,18 +26,19 @@
     }
 
     &__avatar-container {
-      margin-right: 20px;
+      margin: 0 10px;
       @include FlexBox;
       height: 230px;
     }
 
     &__avatar {
-      width: 150px;
+      width: 195px;
     }
 
     &__card {
+      padding: 20px;
       &-switches {
-        width: 100%;
+        width: 95%;
       }
     }
 
@@ -47,18 +50,18 @@
       height: 8px;
 
       &--html {
-        @include Skillbar(85%, $violet-300);
+        @include Skillbar(75%, $violet-300);
       }
 
       &--css {
-        @include Skillbar(75%, $yellow-300);
+        @include Skillbar(65%, $red-100);
       }
 
       &--js {
-        @include Skillbar(60%, $red-100);
+        @include Skillbar(50%, $yellow-300);
       }
       &--react {
-        @include Skillbar(50%, $skyblue);
+        @include Skillbar(35%, $skyblue);
       }
 
       span {
@@ -72,19 +75,25 @@
         font-family: "PT Sans", sans-serif;
         text-align: justify;
 
-        a {
-          text-decoration: none;
-          font-weight: 900;
-          cursor: pointer;
-          position: relative;
-          overflow: hidden;
+        .p-first-link {
+          @include Links;
 
           &::after {
             @include After;
           }
-
           &:hover::after {
             width: 90%;
+          }
+        }
+
+        .p-second-link {
+          @include Links;
+          &::after {
+            @include After;
+          }
+          &:hover::after {
+            width: 94%;
+            margin-left: -5px;
           }
         }
       }
@@ -93,5 +102,8 @@
 }
 
 .card {
+  box-shadow: 0px 5px 10px 0px #948e94;
+  background-color: white;
+  border-radius: 16px;
   padding: 20px;
 }
