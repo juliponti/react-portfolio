@@ -1,6 +1,7 @@
 import "./App.scss";
 import Navbar from "../../components/Navbar";
 import Banner from "../../components/Banner";
+import AboutMe from "../../components/AboutMe";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           twUser="ju_ponti"
           igUser="julipontino"
         />
+        <AboutMe />
       </section>
     </>
   );

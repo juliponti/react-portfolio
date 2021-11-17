@@ -1,4 +1,4 @@
-import NavLogo from "../../assets/navbar/navlogo.png";
+import NavLogo from "../../assets/navbar/icons8-rebel.svg";
 import ItemSection from "./ItemSection";
 import aboutMeImg from "../../assets/navbar/user-solid.svg";
 import servicesImg from "../../assets/navbar/briefcase-solid.svg";

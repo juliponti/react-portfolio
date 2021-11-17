@@ -1,0 +1,97 @@
+@import "../../scss/configurations";
+
+.section {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  &-about-me {
+    background-color: $white-100;
+    padding: 100px 0;
+
+    &__subtitle {
+      font-size: 1.563rem;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    &__right-container {
+      @include FlexBox(column, space-around);
+      height: 510px;
+    }
+
+    &__container {
+      @include FlexBox(row, center, flex-start);
+    }
+
+    &__avatar-container {
+      margin-right: 20px;
+      @include FlexBox;
+      height: 230px;
+    }
+
+    &__avatar {
+      width: 150px;
+    }
+
+    &__card {
+      &-switches {
+        width: 100%;
+      }
+    }
+
+    &__skill-bar {
+      margin: 10px 0 15px;
+      width: 100%;
+      background-color: $white-100;
+      border-radius: 16px;
+      height: 8px;
+
+      &--html {
+        @include Skillbar(85%, $violet-300);
+      }
+
+      &--css {
+        @include Skillbar(75%, $yellow-300);
+      }
+
+      &--js {
+        @include Skillbar(60%, $red-100);
+      }
+      &--react {
+        @include Skillbar(50%, $skyblue);
+      }
+
+      span {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 900;
+      }
+    }
+
+    &__card-info {
+      p {
+        font-family: "PT Sans", sans-serif;
+        text-align: justify;
+
+        a {
+          text-decoration: none;
+          font-weight: 900;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+
+          &::after {
+            @include After;
+          }
+
+          &:hover::after {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  padding: 20px;
+}

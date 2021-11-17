@@ -14,14 +14,7 @@
   overflow: hidden;
 
   &::after {
-    background-color: $violet-200;
-    content: "";
-    width: 0;
-    height: 2px;
-    left: 5px;
-    bottom: -3px;
-    transition: width 0.35s ease 0s;
-    position: absolute;
+    @include After;
   }
 
   &:hover::after {
