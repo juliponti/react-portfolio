@@ -4,16 +4,15 @@
   max-width: 1024px;
   margin: 0 auto;
 
+  &__subtitle {
+    font-size: 1.563rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
   &-about-me {
     background-color: $white-100;
     padding: 100px 0;
-
-    &__subtitle {
-      font-size: 1.563rem;
-      font-weight: 600;
-      text-align: left;
-      letter-spacing: 1px;
-    }
 
     &__right-container {
       @include FlexBox(column, space-around);

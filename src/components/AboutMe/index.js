@@ -1,11 +1,11 @@
-import "./aboutme.scss";
 import Avatar from "../../assets/sections/pale-129.png";
 import CV from "../../assets/CV-PONTINO-JULIETA-ES.pdf";
+import "./aboutme.scss";
 
 function AboutMe() {
   return (
     <section id="about-me" className="section section-about-me">
-      <h3 className="section-about-me__subtitle">Sobre mi</h3>
+      <h3 className="section__subtitle">Sobre mi</h3>
       <hr />
       <div className="section-about-me__container">
         <div className="section-about-me__avatar-container">

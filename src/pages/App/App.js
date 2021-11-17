@@ -2,6 +2,7 @@ import "./App.scss";
 import Navbar from "../../components/Navbar";
 import Banner from "../../components/Banner";
 import AboutMe from "../../components/AboutMe";
+import Services from "../../components/Services";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           igUser="julipontino"
         />
         <AboutMe />
+        <Services />
       </section>
     </>
   );
