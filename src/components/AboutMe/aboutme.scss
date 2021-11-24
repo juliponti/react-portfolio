@@ -1,108 +1,109 @@
 @import "../../scss/configurations";
 
-.section {
-  max-width: 1024px;
-  margin: 0 auto;
+.section-about-me {
+  background-color: $white-100;
+  padding: 100px 0;
 
-  &__subtitle {
-    font-size: 1.563rem;
-    font-weight: 600;
-    text-align: left;
+  &__right-container {
+    @include FlexBox(column, space-around);
+    height: 510px;
+    margin: 0 13px;
   }
 
-  &-about-me {
+  &__container {
+    @include FlexBox(row, center, flex-start);
+  }
+
+  &__avatar-container {
+    margin: 0 10px;
+    @include FlexBox;
+    height: 230px;
+  }
+
+  &__avatar {
+    width: 195px;
+  }
+
+  &__card {
+    padding: 20px;
+    &-switches {
+      width: 95%;
+    }
+  }
+
+  &__skill-bar {
+    margin: 10px 0 15px;
+    width: 100%;
     background-color: $white-100;
-    padding: 100px 0;
+    border-radius: 16px;
+    height: 8px;
 
-    &__right-container {
-      @include FlexBox(column, space-around);
-      height: 510px;
-      margin: 0 13px;
+    &--html {
+      @include Skillbar(70%, $violet-300);
     }
 
-    &__container {
-      @include FlexBox(row, center, flex-start);
+    &--css {
+      @include Skillbar(60%, $red-100);
     }
 
-    &__avatar-container {
-      margin: 0 10px;
-      @include FlexBox;
-      height: 230px;
+    &--sass {
+      @include Skillbar(50%, $pink);
     }
 
-    &__avatar {
-      width: 195px;
+    &--js {
+      @include Skillbar(40%, $yellow-300);
+    }
+    &--react {
+      @include Skillbar(30%, $skyblue);
     }
 
-    &__card {
-      padding: 20px;
-      &-switches {
-        width: 95%;
-      }
+    span {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 900;
+    }
+  }
+
+  /*.run-animation {
+    .section-about-me__skill-bar {
+      animation: css-fill 2s forwards;
     }
 
-    &__skill-bar {
-      margin: 10px 0 15px;
-      width: 100%;
-      background-color: $white-100;
-      border-radius: 16px;
-      height: 8px;
-
-      &--html {
-        @include Skillbar(75%, $violet-300);
+    @keyframes css-fill {
+      0% {
+        width: 0;
       }
-
-      &--css {
-        @include Skillbar(65%, $red-100);
-      }
-
-      &--js {
-        @include Skillbar(50%, $yellow-300);
-      }
-      &--react {
-        @include Skillbar(35%, $skyblue);
-      }
-
-      span {
-        font-family: "PT Sans", sans-serif;
-        font-weight: 900;
+      100% {
+        width: 100%;
       }
     }
+  }*/
 
-    &__card-info {
-      p {
-        font-family: "PT Sans", sans-serif;
-        text-align: justify;
+  &__card-info {
+    p {
+      font-family: "PT Sans", sans-serif;
+      text-align: justify;
 
-        .p-first-link {
-          @include Links;
+      .p-first-link {
+        @include Links;
 
-          &::after {
-            @include After;
-          }
-          &:hover::after {
-            width: 90%;
-          }
+        &::after {
+          @include After;
         }
+        &:hover::after {
+          width: 90%;
+        }
+      }
 
-        .p-second-link {
-          @include Links;
-          &::after {
-            @include After;
-          }
-          &:hover::after {
-            width: 94%;
-            margin-left: -5px;
-          }
+      .p-second-link {
+        @include Links;
+        &::after {
+          @include After;
+        }
+        &:hover::after {
+          width: 94%;
+          margin-left: -5px;
         }
       }
     }
   }
-}
-
-.card {
-  box-shadow: 0px 5px 10px 0px #948e94;
-  background-color: white;
-  border-radius: 16px;
-  padding: 20px;
 }

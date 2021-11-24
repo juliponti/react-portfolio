@@ -1,8 +1,8 @@
-import "./App.scss";
 import Navbar from "../../components/Navbar";
 import Banner from "../../components/Banner";
 import AboutMe from "../../components/AboutMe";
 import Services from "../../components/Services";
+import "./App.scss";
 
 function App() {
   return (

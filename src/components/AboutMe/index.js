@@ -54,9 +54,13 @@ function AboutMe() {
             <div className="section-about-me__skill-bar">
               <div className="section-about-me__skill-bar--html"></div>
             </div>
-            <span>CSS3/SASS</span>
+            <span>CSS3</span>
             <div className="section-about-me__skill-bar">
               <div className="section-about-me__skill-bar--css"></div>
+            </div>
+            <span>SASS</span>
+            <div className="section-about-me__skill-bar">
+              <div className="section-about-me__skill-bar--sass"></div>
             </div>
             <span>JAVASCRIPT</span>
             <div className="section-about-me__skill-bar">
