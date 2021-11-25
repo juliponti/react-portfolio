@@ -9,7 +9,8 @@
   }
   &__card {
     width: 300px;
-    height: 400px;
+    height: 260px;
+
     &-logo {
       width: 100%;
       margin: 10px auto;
@@ -25,11 +26,20 @@
       text-align: center;
       margin: 10px auto;
     }
-    &-text {
-      margin: 0;
-      font-size: 1rem;
-      padding-left: 15px;
+
+    &:hover {
+      animation: card 0.3s ease-out forwards;
     }
+  }
+}
+
+@keyframes card {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
   }
 }
 
