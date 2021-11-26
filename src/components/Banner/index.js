@@ -16,7 +16,7 @@ function Banner(props) {
       <h2 className="section-banner__profesion">{profesion}</h2>
       <ul className="section-banner__list">
         <li className="section-banner__list-item">
-          <a href={() => "https://www.linkedin.com/" + liUser} target="_blank">
+          <a href={() => "https://www.linkedin.com/" + liUser} target="_blank" rel="noreferrer">
             <img
               src={liLogo}
               alt="linkedin logo"
@@ -25,7 +25,7 @@ function Banner(props) {
           </a>
         </li>
         <li className="section-banner__list-item">
-          <a href={() => "https://github.com/" + ghUser} target="_blank">
+          <a href={() => "https://github.com/" + ghUser} target="_blank" rel="noreferrer">
             <img
               src={ghLogo}
               alt="github logo"
@@ -34,7 +34,7 @@ function Banner(props) {
           </a>
         </li>
         <li className="section-banner__list-item">
-          <a href={() => "https://www.twitter.com/" + twUser} target="_blank">
+          <a href={() => "https://www.twitter.com/" + twUser} target="_blank" rel="noreferrer">
             <img
               src={twLogo}
               alt="twitter logo"
@@ -43,7 +43,7 @@ function Banner(props) {
           </a>
         </li>
         <li className="section-banner__list-item">
-          <a href={() => "https://www.instagram.com/" + igUser} target="_blank">
+          <a href={() => "https://www.instagram.com/" + igUser} target="_blank" rel="noreferrer">
             <img
               src={igLogo}
               alt="instagram logo"
@@ -57,7 +57,7 @@ function Banner(props) {
       </a>
       <a href="#about-me" className="section-banner__scroll">
         <span>Scroll down</span>
-        <img src={scroll} className="section-banner__scroll-icon" />
+        <img src={scroll} className="section-banner__scroll-icon" alt="scroll icon" />
       </a>
     </section>
   );

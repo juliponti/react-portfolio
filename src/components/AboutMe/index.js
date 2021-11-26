@@ -26,6 +26,7 @@ function AboutMe() {
                 <a
                   href="https://courseit.io/"
                   target="_blank"
+                  rel="noreferrer"
                   className="p-first-link"
                 >
                   {" "}
@@ -39,13 +40,14 @@ function AboutMe() {
                 <a
                   href="https://www.frontendmentor.io/"
                   target="_blank"
+                  rel="noreferrer"
                   className="p-second-link"
                 >
                   {""} FrontendMentor .
                 </a>
               </p>
             </div>
-            <form method="get" action={CV} target="_blank">
+            <form method="get" action={CV} target="_blank" rel="noreferrer">
               <button className="button-primary">Descargar CV</button>
             </form>
           </div>

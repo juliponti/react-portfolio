@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import Banner from "../../components/Banner";
 import AboutMe from "../../components/AboutMe";
 import Services from "../../components/Services";
+import Experience from "../../components/Experience";
 import "./App.scss";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         />
         <AboutMe />
         <Services />
+        <Experience/>
       </section>
     </>
   );
