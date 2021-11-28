@@ -8,7 +8,7 @@ import "./services.scss";
 
 function Services() {
   return (
-    <section id="#services" className="section section-services">
+    <section id="services" className="section section-services">
       <h3 className="section__subtitle">Servicios</h3>
       <hr />
       <div className="section-services_container">
