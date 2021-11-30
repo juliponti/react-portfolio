@@ -1,0 +1,49 @@
+@import "../../scss/configurations";
+
+.section-my-work {
+  padding: 100px 0px;
+
+  &__bigger-container {
+    margin: 75px auto;
+  }
+
+  &__container {
+    @include FlexBox;
+    margin: 10px 0;
+    gap: 16px;
+  }
+
+  &__card {
+    width: 300px;
+    height: 250px;
+    position: relative;
+
+    img {
+      border-radius: 16px;
+    }
+  }
+
+  &__mask {
+    height: 100%;
+    width: 100%;
+    @include FlexBox;
+    background-color: $violet;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    color: $white;
+    border-radius: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__title {
+    font-family: "PT Sans", sans-serif;
+  }
+}

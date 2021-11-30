@@ -23,7 +23,7 @@ const itemData = [
     className: "navbar__menu-logo",
   },
   {
-    link: "#experiencies",
+    link: "#experience",
     img: expImg,
     alt: "graduation cap icon",
     title: "Experencia",

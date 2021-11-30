@@ -4,7 +4,7 @@ import "./experience.scss";
 function Experience() {
   return (
     <section id="experience" className="section section-experience">
-      <h3 className="section-experience__subtitle">Experiencia</h3>
+      <h3 className="section__subtitle">Experiencia</h3>
       <hr />
       <div className="section-experience__container">
         <div className="card section-experience__card">

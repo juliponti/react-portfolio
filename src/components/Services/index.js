@@ -14,7 +14,7 @@ function Services() {
       <div className="section-services_container">
         <div className="card section-services__card" id="card1">
           <div className="section-services__card-logo">
-            <img src={HTML} alt="" />
+            <img src={HTML} alt="html logo" />
           </div>
 
           <div>
@@ -23,7 +23,7 @@ function Services() {
         </div>
         <div className="card section-services__card" id="card2">
           <div className="section-services__card-logo">
-            <img src={CSS} alt="" />
+            <img src={CSS} alt="css logo" />
           </div>
           <div>
             <h4 className="section-services__card-name">CSS</h4>
@@ -31,7 +31,7 @@ function Services() {
         </div>
         <div className="card section-services__card" id="card3">
           <div className="section-services__card-logo">
-            <img src={SASS} alt="" />
+            <img src={SASS} alt="sass logo" />
           </div>
           <div>
             <h4 className="section-services__card-name">SASS</h4>
@@ -39,7 +39,7 @@ function Services() {
         </div>
         <div className="card section-services__card" id="card4">
           <div className="section-services__card-logo">
-            <img src={JS} alt="" />
+            <img src={JS} alt="javascript logo" />
           </div>
           <div>
             <h4 className="section-services__card-name">JAVASCRIPT</h4>
@@ -47,7 +47,7 @@ function Services() {
         </div>
         <div className="card section-services__card" id="card5">
           <div className="section-services__card-logo">
-            <img src={REACT} alt="" />
+            <img src={REACT} alt="react logo" />
           </div>
           <div>
             <h4 className="section-services__card-name">REACT</h4>

@@ -1,6 +1,8 @@
 @import "../../scss/configurations";
 
 .section-services {
+  padding: 100px 0;
+
   &_container {
     @include FlexBox;
     flex-wrap: wrap;
