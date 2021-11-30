@@ -4,6 +4,7 @@ import AboutMe from "../../components/AboutMe";
 import Services from "../../components/Services";
 import Experience from "../../components/Experience";
 import MyWork from "../../components/MyWork";
+import Contact from "../../components/Contact";
 import "./App.scss";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
         <Experience />
         <MyWork />
       </section>
+      <footer>
+        <Contact />
+      </footer>
     </>
   );
 }

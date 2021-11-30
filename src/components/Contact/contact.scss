@@ -1,0 +1,37 @@
+@import "../../scss/configurations";
+
+.footer-contact {
+  &__container {
+    @include FlexBox;
+  }
+
+  &__info {
+    width: 50%;
+    margin-right: 30px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 600px;
+
+    &-atributes-group {
+      @include FlexBox;
+      border: none;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form-input {
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px #c0b8c0;
+  border-radius: 24px;
+  padding: 24px;
+  border: none;
+  outline: none;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
