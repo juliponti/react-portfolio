@@ -10,7 +10,7 @@ import "./mywork.scss";
 function MyWork() {
   return (
     <section id="my-work" className="section section-my-work">
-      <h3 className="section__subtitle">Mis trabajos</h3>
+      <h3 className="section__subtitle">Mis Proyectos</h3>
       <hr />
       <div className="section-my-work__bigger-container">
         <div className="section-my-work__container">
