@@ -83,9 +83,9 @@ function MyWork() {
               alt="avatar girl"
               className="section-my-work__img"
             />
-            <a className="section-my-work__mask">
+            <div className="section-my-work__mask">
               <h3 className="section-my-work__title">Project title </h3>
-            </a>
+            </div>
           </div>
           <div className="section-my-work__card">
             <img
@@ -93,9 +93,9 @@ function MyWork() {
               alt="girl with a smartphone"
               className="section-my-work__img"
             />
-            <a className="section-my-work__mask">
+            <div className="section-my-work__mask">
               <h3 className="section-my-work__title">Project title </h3>
-            </a>
+            </div>
           </div>
         </div>
       </div>

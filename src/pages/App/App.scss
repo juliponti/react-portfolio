@@ -23,8 +23,8 @@
 }
 
 .card {
-  box-shadow: 0px 5px 10px 0px #948e94;
-  background-color: white;
+  box-shadow: 0px 5px 10px 0px $box-shadow-300;
+  background-color: $white;
   border-radius: 16px;
   padding: 20px;
 }

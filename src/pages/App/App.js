@@ -14,14 +14,7 @@ function App() {
         <Navbar />
       </header>
       <section className="sections">
-        <Banner
-          name="Julieta Pontino"
-          profesion="Frontend Developer"
-          liUser="in/julieta-pontino-3a168b211/"
-          ghUser="juliponti"
-          twUser="ju_ponti"
-          igUser="julipontino"
-        />
+        <Banner name="Julieta Pontino" profesion="Frontend Developer" />
         <AboutMe />
         <Services />
         <Experience />
