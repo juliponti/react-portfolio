@@ -8,6 +8,7 @@
   &__info {
     width: 50%;
     margin-right: 30px;
+    min-height: 289px;
   }
 
   &__form {
@@ -18,14 +19,16 @@
       @include FlexBox;
       border: none;
       padding: 0;
-      margin-bottom: 10px;
+      margin: 0;
     }
   }
 }
 
 .form-input {
+  font-family: Roboto, sans-serif;
+  height: 50px;
   width: 100%;
-  box-shadow: 0px 5px 5px 0px #c0b8c0;
+  box-shadow: 0px 3px 7px 0px $box-shadow-100;
   border-radius: 24px;
   padding: 24px;
   border: none;
@@ -34,4 +37,15 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  &:focus {
+    outline: 1px solid $violet-100;
+  }
+}
+
+#areatext {
+  font-family: Roboto, sans-serif;
+  resize: none;
+  min-height: 150px;
+  margin: 15px 0;
 }
