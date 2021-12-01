@@ -1,22 +1,26 @@
-import "./contact.scss";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import apiKey from "./emailkey.js";
 
+import "./contact.scss";
+
 function Contact() {
+  const [inputValue, setInputValue] = useState();
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+      .sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
       .then(
         (result) => {
-          alert("Message Sent, We will get back to you shortly", result.text);
+          alert("¡Mensaje enviado!", result.text);
         },
         (error) => {
-          alert("An error occurred, Please try again", error.text);
+          alert("Ha ocurrido un error, por favor intenta de nuevo", error.text);
         }
       );
+
+    setInputValue("");
   };
 
   return (
@@ -38,12 +42,14 @@ function Contact() {
               type="text"
               placeholder="Nombre"
               name="user_name"
+              value={inputValue}
             />
             <input
               className="form-input"
               type="text"
               placeholder="Email"
               name="user_email"
+              value={inputValue}
             />
           </fieldset>
           <textarea
@@ -52,6 +58,7 @@ function Contact() {
             id="areatext"
             spellCheck="false"
             name="message"
+            value={inputValue}
           />
           <input type="submit" value="Enviar" className="button-primary" />
         </form>
