@@ -8,14 +8,15 @@ function AboutMe() {
       <h3 className="section__subtitle">Sobre mi</h3>
       <hr />
       <div className="section-about-me__container">
-        <div className="section-about-me__avatar-container">
-          <img
-            src={Avatar}
-            alt="female avatar with a cup of coffe"
-            className="section-about-me__avatar"
-          />
-        </div>
-        <div className="section-about-me__right-container">
+        <div className="section-about-me__up-container">
+          <div className="section-about-me__avatar-container">
+            <img
+              src={Avatar}
+              alt="female avatar with a cup of coffe"
+              className="section-about-me__avatar"
+            />
+          </div>
+
           <div className=" section-about-me__card">
             <div className="section-about-me__card-info">
               <p>
@@ -51,27 +52,27 @@ function AboutMe() {
               <button className="button-primary">Descargar CV</button>
             </form>
           </div>
-          <div className=" card section-about-me__card-switches ">
-            <span>HTML5</span>
-            <div className="section-about-me__skill-bar">
-              <div className="section-about-me__skill-bar--html"></div>
-            </div>
-            <span>CSS3</span>
-            <div className="section-about-me__skill-bar">
-              <div className="section-about-me__skill-bar--css"></div>
-            </div>
-            <span>SASS</span>
-            <div className="section-about-me__skill-bar">
-              <div className="section-about-me__skill-bar--sass"></div>
-            </div>
-            <span>JAVASCRIPT</span>
-            <div className="section-about-me__skill-bar">
-              <div className="section-about-me__skill-bar--js"></div>
-            </div>
-            <span>REACT</span>
-            <div className="section-about-me__skill-bar">
-              <div className="section-about-me__skill-bar--react"></div>
-            </div>
+        </div>
+        <div className=" card section-about-me__card-switches ">
+          <span>HTML5</span>
+          <div className="section-about-me__skill-bar">
+            <div className="section-about-me__skill-bar--html"></div>
+          </div>
+          <span>CSS3</span>
+          <div className="section-about-me__skill-bar">
+            <div className="section-about-me__skill-bar--css"></div>
+          </div>
+          <span>SASS</span>
+          <div className="section-about-me__skill-bar">
+            <div className="section-about-me__skill-bar--sass"></div>
+          </div>
+          <span>JAVASCRIPT</span>
+          <div className="section-about-me__skill-bar">
+            <div className="section-about-me__skill-bar--js"></div>
+          </div>
+          <span>REACT</span>
+          <div className="section-about-me__skill-bar">
+            <div className="section-about-me__skill-bar--react"></div>
           </div>
         </div>
       </div>

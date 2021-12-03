@@ -34,3 +34,118 @@ footer {
   max-width: 1024px;
   margin: 0 auto 100px;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar__section-container,
+  .section,
+  footer {
+    max-width: 715px;
+  }
+
+  .section {
+    &-experience__card {
+      min-height: 636px;
+      min-width: 290px;
+    }
+
+    &-my-work__container {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .navbar__section-container,
+  .section,
+  footer {
+    max-width: 380px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .section-about-me {
+    &__up-container {
+      @include FlexBox(column);
+    }
+
+    &__card-info p {
+      text-align: center;
+    }
+  }
+
+  .section-experience {
+    &__container {
+      @include FlexBox(column);
+    }
+
+    &__card {
+      min-width: 320px;
+    }
+  }
+
+  .section-my-work__container {
+    @include FlexBox(column);
+  }
+
+  .footer-contact {
+    &__container {
+      @include FlexBox(column);
+    }
+
+    &__info {
+      width: 100%;
+      min-height: 155px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .navbar__section-container,
+  .section,
+  footer {
+    max-width: 270px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .section-about-me {
+    &__up-container {
+      @include FlexBox(column);
+    }
+
+    &__card-info p {
+      text-align: center;
+    }
+  }
+
+  .section-experience {
+    &__container {
+      @include FlexBox(column);
+    }
+
+    &__card {
+      min-width: 285px;
+    }
+  }
+
+  .section-my-work__container {
+    @include FlexBox(column);
+  }
+
+  .footer-contact {
+    &__container {
+      @include FlexBox(column);
+    }
+
+    &__info {
+      width: 100%;
+      min-height: 155px;
+      margin: 0;
+    }
+  }
+}

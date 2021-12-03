@@ -50,9 +50,7 @@ function Experience() {
               <p className="section-experience__card-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 modi ad molestiae inventore Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Iste modi ad molestiae inventore
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                modi ad molestiae inventore
+                consectetur adipisicing elit
               </p>
             </div>
           </div>
@@ -73,9 +71,7 @@ function Experience() {
               <p className="section-experience__card-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 modi ad molestiae inventore Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Iste modi ad molestiae inventore
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                modi ad molestiae inventore
+                consectetur adipisicing elit.
               </p>
             </div>
           </div>
