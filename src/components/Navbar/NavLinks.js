@@ -1,11 +1,9 @@
-import NavLogo from "../../assets/navbar/icons8-rebel.svg";
-import ItemSection from "./ItemSection";
+//import ItemSection from "./ItemSection/itemsection.js";
 import aboutMeImg from "../../assets/navbar/user-solid.svg";
 import servicesImg from "../../assets/navbar/briefcase-solid.svg";
 import expImg from "../../assets/navbar/graduation-cap-solid.svg";
 import myWorkImg from "../../assets/navbar/layer-group-solid.svg";
 import contactImg from "../../assets/navbar/comments-solid.svg";
-import "./navbar.scss";
 
 const itemData = [
   {
@@ -27,7 +25,7 @@ const itemData = [
     img: expImg,
     alt: "graduation cap icon",
     title: "Experencia",
-    className: "navbar__menu-logo--experiencies",
+    className: "navbar__menu-logo--experiencie",
   },
   {
     link: "#my-work",
@@ -45,19 +43,19 @@ const itemData = [
   },
 ];
 
-function Navbar() {
+function NavbarLinks() {
   return (
-    <div className="navbar__section-container">
-      <img src={NavLogo} alt="yellow crown logo" className="navbar__logo-img" />
-      <nav className="navbar__menu">
-        <ul className="navbar__menu-list">
-          {itemData.map((item) => (
-            <ItemSection {...item} key={itemData.title} />
-          ))}
-        </ul>
-      </nav>
-    </div>
+    <ul className="navbar__menu-list">
+      {itemData.map((item) => (
+        <li className="navbar__menu-list-item">
+          <a href={item.link} className="navbar__menu-link">
+            <img src={item.img} alt={item.alt} className={item.className} />
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }
 
-export default Navbar;
+export default NavbarLinks;

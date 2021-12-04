@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/navbar";
 import Banner from "../../components/Banner";
 import AboutMe from "../../components/AboutMe";
 import Services from "../../components/Services";
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
       </header>
       <section className="sections">
-        <Banner name="Julieta Pontino" profesion="Frontend Developer" />
+        <Banner />
         <AboutMe />
         <Services />
         <Experience />

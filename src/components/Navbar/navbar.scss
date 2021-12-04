@@ -23,3 +23,89 @@
     }
   }
 }
+
+.navbar__menu-list-item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.navbar__menu-link {
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    @include After;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  .navbar__menu-logo {
+    width: 14px;
+    margin: 0 6px;
+
+    &--experiencie,
+    &--contact {
+      width: 18px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    @include FlexBox;
+
+    .navbar__menu-list {
+      @include FlexBox(column);
+      height: 500px;
+      background-color: $violet-600;
+      position: absolute;
+      top: 44px;
+      right: 0;
+      width: 100%;
+      border-top: 1px solid $violet-100;
+
+      li {
+        text-align: left;
+        margin: 0 10px;
+        padding: 12px 10px;
+        width: 100%;
+        font-size: 20px;
+        a {
+          display: block;
+          width: 100%;
+          &::after {
+            display: none;
+          }
+          img {
+            display: none;
+          }
+        }
+
+        &:hover {
+          background-color: $violet-100;
+        }
+      }
+    }
+
+    .hamburger {
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+    }
+  }
+}

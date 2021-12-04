@@ -6,14 +6,12 @@ import igLogo from "../../assets/banner/instagram.svg";
 import scroll from "../../assets/banner/scroll.png";
 import "./banner.scss";
 
-function Banner(props) {
-  const { name, profesion } = props;
-
+function Banner() {
   return (
     <section className="section-banner">
       <img src={bannerLogo} className="section-banner__avatar" alt="avatar" />
-      <h1 className="section-banner__name">{name}</h1>
-      <h2 className="section-banner__profesion">{profesion}</h2>
+      <h1 className="section-banner__name">Julieta Pontino</h1>
+      <h2 className="section-banner__profesion">Frontend Developer</h2>
       <ul className="section-banner__list">
         <li className="section-banner__list-item">
           <a
