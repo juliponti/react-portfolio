@@ -24,10 +24,12 @@ function MobileNavigation() {
     />
   );
 
+  const closeMobileMenu = () => setOpen(false);
+
   return (
     <nav className="navbar__menu mobile">
       {open ? closeIcon : hamburgerIcon}
-      {open && <NavLinks />}
+      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>
   );
 }

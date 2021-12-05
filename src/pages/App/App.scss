@@ -105,10 +105,6 @@ footer {
     max-width: 270px;
   }
 
-  .navbar__menu {
-    display: none;
-  }
-
   .section-about-me {
     &__up-container {
       @include FlexBox(column);

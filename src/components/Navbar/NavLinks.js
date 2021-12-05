@@ -43,11 +43,14 @@ const itemData = [
   },
 ];
 
-function NavbarLinks() {
+function NavbarLinks(props) {
   return (
     <ul className="navbar__menu-list">
       {itemData.map((item) => (
-        <li className="navbar__menu-list-item">
+        <li
+          className="navbar__menu-list-item"
+          onClick={() => props.isMobile && props.closeMobileMenu()}
+        >
           <a href={item.link} className="navbar__menu-link">
             <img src={item.img} alt={item.alt} className={item.className} />
             {item.title}
