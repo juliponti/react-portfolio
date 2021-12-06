@@ -70,7 +70,7 @@
     @include FlexBox;
 
     .navbar__menu-list {
-      @include FlexBox(column);
+      @include FlexBox(column, flex-start);
       height: 100vh;
       background-color: $violet-600;
       position: absolute;
@@ -78,6 +78,7 @@
       left: 0;
       width: 70%;
       border-top: 1px solid $violet-100;
+      padding: 85px 0;
 
       li {
         text-align: center;
