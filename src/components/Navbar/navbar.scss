@@ -71,7 +71,7 @@
 
     .navbar__menu-list {
       @include FlexBox(column);
-      height: 582px;
+      height: 100vh;
       background-color: $violet-600;
       position: absolute;
       top: 47px;
