@@ -159,5 +159,19 @@ footer {
       min-height: 155px;
       margin: 0;
     }
+    &__form-atributes-group {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin: 5px 0;
+      }
+
+      .form-input {
+        &:not(:last-child) {
+          margin-right: 0px;
+        }
+      }
+    }
   }
 }
