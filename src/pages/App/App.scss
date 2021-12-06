@@ -144,8 +144,8 @@ footer {
       @include FlexBox(column);
     }
 
-    &__mask {
-      opacity: 0.7;
+    &__mask:focus {
+      opacity: 0.9;
     }
   }
 
