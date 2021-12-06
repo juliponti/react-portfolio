@@ -71,41 +71,38 @@
 
     .navbar__menu-list {
       @include FlexBox(column);
-      height: 500px;
+      height: 523px;
       background-color: $violet-600;
       position: absolute;
       top: 44px;
-      right: 0;
-      width: 100%;
+      left: 0;
+      width: 70%;
       border-top: 1px solid $violet-100;
 
       li {
-        text-align: left;
+        text-align: center;
         margin: 0 10px;
         padding: 12px 10px;
         width: 100%;
         font-size: 20px;
         a {
-          display: block;
+          display: flex;
           width: 100%;
           &::after {
             display: none;
           }
-          img {
-            display: none;
-          }
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: $violet-100;
         }
       }
     }
-
-    .hamburger {
-      position: absolute;
-      right: 5%;
-      cursor: pointer;
+    .open {
+      .section-banner {
+        filter: blur(1px);
+      }
     }
   }
 }

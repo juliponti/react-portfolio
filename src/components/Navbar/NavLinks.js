@@ -4,6 +4,7 @@ import servicesImg from "../../assets/navbar/briefcase-solid.svg";
 import expImg from "../../assets/navbar/graduation-cap-solid.svg";
 import myWorkImg from "../../assets/navbar/layer-group-solid.svg";
 import contactImg from "../../assets/navbar/comments-solid.svg";
+import { motion } from "framer-motion";
 
 const itemData = [
   {
@@ -44,10 +45,24 @@ const itemData = [
 ];
 
 function NavbarLinks(props) {
+  const animateFrom = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
+
+  const aniFrom = { x: -400 };
+  const aniTo = { x: 0 };
+
   return (
-    <ul className="navbar__menu-list">
+    <motion.ul
+      className="navbar__menu-list"
+      initial={aniFrom}
+      animate={aniTo}
+      transition={{ duration: 0.3 }}
+    >
       {itemData.map((item) => (
-        <li
+        <motion.li
+          initial={animateFrom}
+          animate={animateTo}
+          transition={{ delay: 0.3 }}
           className="navbar__menu-list-item"
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
@@ -55,9 +70,9 @@ function NavbarLinks(props) {
             <img src={item.img} alt={item.alt} className={item.className} />
             {item.title}
           </a>
-        </li>
+        </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }
 
