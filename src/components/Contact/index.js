@@ -29,7 +29,6 @@ function Contact() {
       <div className="footer-contact__container">
         <div className="footer-contact__info">
           <h4>¡Enviame un mensaje!</h4>
-          <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit</p>
         </div>
         <form
           ref={form}
