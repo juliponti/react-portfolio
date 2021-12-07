@@ -53,3 +53,8 @@
   min-height: 150px;
   margin: 15px 0;
 }
+
+.button-primary:disabled {
+  background-color: $gray;
+  cursor: not-allowed;
+}

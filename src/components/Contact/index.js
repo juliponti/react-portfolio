@@ -6,9 +6,12 @@ import "./contact.scss";
 
 function Contact() {
   const [inputValue, setInputValue] = useState();
+  const [buttonActive, setButtonActive] = useState(false);
+
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         apiKey.SERVICE_ID,
@@ -27,6 +30,10 @@ function Contact() {
 
     setInputValue("");
   };
+
+  function handleButtonActive() {
+    inputValue !== "" ? setButtonActive(true) : setButtonActive(false);
+  }
 
   return (
     <div id="contact" className="footer-contact">
@@ -47,6 +54,7 @@ function Contact() {
               placeholder="Nombre"
               name="user_name"
               value={inputValue}
+              onChange={handleButtonActive}
             />
             <input
               className="form-input"
@@ -54,6 +62,7 @@ function Contact() {
               placeholder="Email"
               name="user_email"
               value={inputValue}
+              onChange={handleButtonActive}
             />
           </fieldset>
           <textarea
@@ -63,8 +72,13 @@ function Contact() {
             spellCheck="false"
             name="message"
             value={inputValue}
+            onChange={handleButtonActive}
           />
-          <button type="submit" className="button-primary">
+          <button
+            type="submit"
+            className="button-primary"
+            disabled={!buttonActive}
+          >
             Enviar
           </button>
         </form>
