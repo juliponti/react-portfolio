@@ -10,7 +10,12 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+      .sendForm(
+        apiKey.SERVICE_ID,
+        apiKey.TEMPLATE_ID,
+        form.current,
+        apiKey.USER_ID
+      )
       .then(
         (result) => {
           alert("¡Mensaje enviado!", result.text);
@@ -45,7 +50,7 @@ function Contact() {
             />
             <input
               className="form-input"
-              type="text"
+              type="email"
               placeholder="Email"
               name="user_email"
               value={inputValue}
@@ -59,7 +64,9 @@ function Contact() {
             name="message"
             value={inputValue}
           />
-          <input type="submit" value="Enviar" className="button-primary" />
+          <button type="submit" className="button-primary">
+            Enviar
+          </button>
         </form>
       </div>
     </div>
