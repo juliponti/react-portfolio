@@ -1,5 +1,5 @@
 import Avatar from "../../assets/sections/pale-129.png";
-import CV from "../../assets/CV-PONTINO-JULIETA-ES.pdf";
+import CV from "../../assets/PontinoJulieta-CV-ES.pdf";
 import "./aboutme.scss";
 
 function AboutMe() {
