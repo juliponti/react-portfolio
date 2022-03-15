@@ -61,6 +61,7 @@ function MyWork() {
             </a>
           </div>
         </div>
+
         <div className="section-my-work__container">
           <div className="section-my-work__card">
             <img
@@ -80,12 +81,17 @@ function MyWork() {
           <div className="section-my-work__card">
             <img
               src={Img5}
-              alt="avatar girl"
+              alt="magic eight ball"
               className="section-my-work__img"
             />
-            <div className="section-my-work__mask">
-              <h3 className="section-my-work__title">Project title </h3>
-            </div>
+            <a
+              className="section-my-work__mask"
+              href="https://juliponti.github.io/magic-eight-ball-app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h3 className="section-my-work__title">Magic Eight Ball </h3>
+            </a>
           </div>
           <div className="section-my-work__card">
             <img
