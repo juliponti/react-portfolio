@@ -67,7 +67,7 @@ function Banner() {
         </li>
       </ul>
       <a href="#contact" className="button-primary">
-        Contáctame
+        Contact me
       </a>
       <a href="#about-me" className="section-banner__scroll">
         <span>Scroll down</span>

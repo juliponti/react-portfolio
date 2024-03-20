@@ -7,7 +7,7 @@ import "./navbar.scss";
 function Navbar() {
   return (
     <div className="navbar__section-container">
-      <img src={NavLogo} alt="yellow crown logo" className="navbar__logo-img" />
+      <img src={NavLogo} alt="pink star wars rebel symbol" className="navbar__logo-img" />
       <Navigation />
       <MobileNavigation />
     </div>

@@ -2,10 +2,10 @@ import Avatar from "../../assets/sections/pale-129.png";
 import CV from "../../assets/PontinoJulieta-CV-ES.pdf";
 import "./aboutme.scss";
 
-function AboutMe() {
+const AboutMe = () => {
   return (
     <section id="about-me" className="section section-about-me">
-      <h3 className="section__subtitle">Sobre mi</h3>
+      <h3 className="section__subtitle">About me</h3>
       <hr />
       <div className="section-about-me__container">
         <div className="section-about-me__up-container">
@@ -20,36 +20,19 @@ function AboutMe() {
           <div className=" section-about-me__card">
             <div className="section-about-me__card-info">
               <p>
-                Hola! Soy una desarrolladora frontend en progreso. Comencé a
-                adentrarme en el mundo It en Mayo de 2021 y me encantó. Estoy en
-                busca de mi primera oportunidad laboral y no puedo esperar a
-                tenerla! Realicé todos los cursos certificados de frontend en
-                <a
-                  href="https://courseit.io/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="p-first-link"
-                >
-                  {" "}
-                  Course[It]
-                </a>{" "}
-                y estudio mucho por mi cuenta a través de diversas fuentes como
-                Youtube, FreeCodeCamp y el abanico de posibilidades y
-                herramientas que afortunadamente nos brinda internet hoy en día.
-                También complemento para poner en práctica lo aprendido haciendo
-                challenges en {""}
-                <a
-                  href="https://www.frontendmentor.io/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="p-second-link"
-                >
-                  {""} FrontendMentor .
-                </a>
+                Are you searching for a talented and driven Frontend Developer
+                to elevate your digital presence and deliver captivating user
+                experiences? Look no further! With a deep-rooted passion for web
+                development I thrive in the ever-evolving world of technology,
+                staying up to date with the latest trends and industry best
+                practices. My goal is to create visually stunning and
+                user-friendly interfaces that leave a lasting impact on users.
+                {" "}
+                I'm from Argentina, Buenos Aires 
               </p>
             </div>
             <form method="get" action={CV} target="_blank" rel="noreferrer">
-              <button className="button-primary">Descargar CV</button>
+              <button className="button-primary">Download CV</button>
             </form>
           </div>
         </div>
@@ -78,6 +61,6 @@ function AboutMe() {
       </div>
     </section>
   );
-}
+};
 
 export default AboutMe;
